@@ -3,11 +3,19 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
+import { FormComponent } from './main/form/form.component';
+import { ListaComponent } from './main/lista/lista.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    MainComponent,
+    FormComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule
