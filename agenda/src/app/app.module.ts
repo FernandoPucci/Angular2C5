@@ -1,24 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpModule, Http} from '@angular/http';
 
 import { AppComponent } from './app.component';
+
+
+import { MainModule } from './main/main.module';
 import { LoginComponent } from './login/login.component';
-import { MainComponent } from './main/main.component';
-import { FormComponent } from './main/form/form.component';
-import { ListaComponent } from './main/lista/lista.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent,
-    MainComponent,
-    FormComponent,
-    ListaComponent
+    LoginComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    MainModule,
+    FormsModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]
