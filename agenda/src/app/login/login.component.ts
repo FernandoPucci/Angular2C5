@@ -15,6 +15,11 @@ export class LoginComponent {
   onSubmit() {
     this.authError = false;
 
+    if (this.dataSource.Usuario === undefined) {
+      alert('Digite um nome de usuário!');
+      return;
+    }
+
     if (this.dataSource.Usuario === 'agenda' && this.dataSource.senha === '123') {
       this.authError = false;
     } else {
