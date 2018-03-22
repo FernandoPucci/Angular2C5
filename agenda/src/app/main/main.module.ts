@@ -5,6 +5,7 @@ import { MainComponent } from './main.component';
 import { mainRouting } from './main.routing';
 import { FormComponent } from './form/form.component';
 import { ListaComponent } from './lista/lista.component';
+import { FilterPipe } from '../filter.pipe';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ListaComponent } from './lista/lista.component';
   declarations: [
     MainComponent,
     FormComponent,
-    ListaComponent
+    ListaComponent,
+    FilterPipe
   ],
   bootstrap: [MainComponent]
 })
