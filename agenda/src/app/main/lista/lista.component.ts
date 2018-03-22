@@ -1,9 +1,11 @@
 import { Component, Input, Output, EventEmitter, OnChanges } from '@angular/core';
+import { FilterPipe } from '../../filter.pipe';
 
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
-  styleUrls: ['./lista.component.css']
+  styleUrls: ['./lista.component.css'],
+  providers: [FilterPipe]
 })
 export class ListaComponent implements OnChanges {
 
