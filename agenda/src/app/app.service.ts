@@ -11,7 +11,7 @@ export class AppService {
     AUTH_COOKIE = 'agendaCookie';
 
     getCEP(cep: string) {
-        return this.http.get('https://viacep.com.br/ws/' + cep + 'json').map(a => a.json());
+        return this.http.get('https://viacep.com.br/ws/' + cep + '/json').map(a => a.json());
     }
 
 }
