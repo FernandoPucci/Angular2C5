@@ -49,8 +49,8 @@ export class FormComponent implements OnInit {
   addTelefone(e) {
     if (!this.dataSource.Telefone) this.dataSource.Telefone = [];
     this.dataSource.Telefone.push(e);
-    this.txtTelefone.nativeElement.value = '';
-    this.txtTelefone.nativeElement.focus();
+    this.txtTelefone.nativeElement.value = '';  // DOM manipulation
+    this.txtTelefone.nativeElement.focus();     // DOM manipulation
   }
 
   apagarEmail(e) {
