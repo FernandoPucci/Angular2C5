@@ -62,6 +62,7 @@ export class FormComponent implements OnInit {
   }
 
   onSubmit() {
+    console.log(this.dataSource);
     this.onSaveItem.emit(this.dataSource);
     this.initDataSource();
   }
